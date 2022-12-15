@@ -1,0 +1,22 @@
+﻿using Microsoft.EntityFrameworkCore;
+using pandacommerce_dal.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace pandacommerce_dal.Data
+{
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+
+
+
+        }
+
+        public DbSet<NavCategory> navCategories { get; set; }
+    }
+}

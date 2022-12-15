@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-bal.deps.json
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-bal.dll
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-bal.pdb
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-dal.dll
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-dal.pdb
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.AssemblyInfo.cs
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.csproj.CopyComplete
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.dll
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\refint\pandacommerce-bal.dll
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.pdb
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-bal\obj\Debug\net6.0\ref\pandacommerce-bal.dll
