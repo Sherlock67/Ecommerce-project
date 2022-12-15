@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using pandacommerce_bal.Services;
 using pandacommerce_dal.Data;
+using pandacommerce_dal.Interface;
+using pandacommerce_dal.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddTransient<INavCategory, NavCategoryRepository>();
+builder.Services.AddTransient<NavCategoryService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
