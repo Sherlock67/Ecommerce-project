@@ -1,4 +1,5 @@
-﻿using pandacommerce_dal.Interface;
+﻿using pandacommerce_dal.Data;
+using pandacommerce_dal.Interface;
 using pandacommerce_dal.Model;
 using System;
 using System.Collections.Generic;
@@ -10,29 +11,46 @@ namespace pandacommerce_dal.Repository
 {
     public class ProductRepository : IProduct
     {
-        public Task<Product> Create(Product entity)
+        public readonly ApplicationDbContext db;
+        public ProductRepository(ApplicationDbContext db)
         {
-            throw new NotImplementedException();
+            this.db = db;
+        }
+        public async Task<Product> Create(Product entity)
+        {
+            var obj = await db.products.AddAsync(entity);
+            db.SaveChanges();
+            return obj.Entity;
         }
 
         public void Delete(Product entity)
         {
-            throw new NotImplementedException();
+            db.Remove(entity);
+            db.SaveChanges(); 
         }
 
         public IEnumerable<Product> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return db.products.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public Product GetById(int Id)
         {
-            throw new NotImplementedException();
+            return db.products.Where(x => x.product_Id == Id).SingleOrDefault();
         }
 
         public void Update(Product entity)
         {
-            throw new NotImplementedException();
+            db.products.Update(entity);
+            db.SaveChanges();
+            
         }
     }
 }
