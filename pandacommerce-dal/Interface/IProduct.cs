@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace pandacommerce_dal.Interface
 {
-    public interface INavCategory : IRepository<NavCategory>
+    public interface IProduct : IRepository<Product>
     {
     }
 }
-  

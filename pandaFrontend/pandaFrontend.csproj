@@ -20,4 +20,9 @@
     <ProjectReference Include="..\pandacommerce-dal\pandacommerce-dal.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
