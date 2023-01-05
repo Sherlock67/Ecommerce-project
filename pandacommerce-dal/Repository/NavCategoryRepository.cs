@@ -47,8 +47,6 @@ namespace pandacommerce_dal.Repository
         public NavCategory GetById(int Id)
         {
             return db.navCategories.Where(x => x.NavCategoryId == Id).SingleOrDefault();
-
-            //throw new NotImplementedException();
         }
 
         public void Update(NavCategory entity)
