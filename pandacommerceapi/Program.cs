@@ -13,6 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IProduct,ProductRepository>();
+builder.Services.AddTransient<IProductCategory,ProductCategoryRepository>();
+builder.Services.AddTransient<ProductCategoryService>();
 builder.Services.AddTransient<INavCategory, NavCategoryRepository>();
 builder.Services.AddTransient<NavCategoryService>();
 builder.Services.AddTransient<ProductService>();
