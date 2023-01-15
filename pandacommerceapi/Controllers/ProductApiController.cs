@@ -23,9 +23,9 @@ namespace pandacommerceapi.Controllers
                 return p;
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return false;
+                return ex;
             }
         }
     }
