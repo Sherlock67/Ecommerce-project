@@ -28,5 +28,12 @@ namespace pandacommerceapi.Controllers
                 return false;
             }
         }
+        [HttpGet("GetAllNavigationCategory")]
+        public List<NavCategory> GetAllNavigationCategory()
+        {
+            var data = navCategoryService.GetAllNavCategory();
+            return data.ToList(); 
+        }
+
     }
 }

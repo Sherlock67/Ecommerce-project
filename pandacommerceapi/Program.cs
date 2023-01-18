@@ -5,9 +5,7 @@ using pandacommerce_dal.Interface;
 using pandacommerce_dal.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -22,12 +20,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
 
 app.UseHttpsRedirection();

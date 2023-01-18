@@ -20,5 +20,17 @@ namespace pandacommerce_bal.Services
         {
             return await navCategory.Create(nav);
         }
+
+        public IEnumerable<NavCategory> GetAllNavCategory()
+        {
+            try
+            {
+                return navCategory.GetAll().ToList();
+            }
+            catch(Exception ex) 
+            {
+                throw ex;
+            }
+        }
     }
 }

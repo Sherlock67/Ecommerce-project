@@ -19,5 +19,18 @@ namespace pandacommerce_bal.Services
         {
             return await product.Create(p);
         }
+
+        public IEnumerable<Product> GetAllProductsBetweenPriceRange(int l,int r)
+        {
+            try
+            {
+                return product.getProductsbyPrice(l, r);
+            }
+            catch(Exception ex ) 
+            {
+                throw;
+
+            }
+        }
     }
 }

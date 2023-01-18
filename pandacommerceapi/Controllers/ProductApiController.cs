@@ -28,5 +28,17 @@ namespace pandacommerceapi.Controllers
                 return ex;
             }
         }
+        [HttpGet("GetProductsbyPrice")]
+        public IEnumerable<Product> GetProductsbyPrice(int l,int r)
+        {
+            try
+            {
+              return  pService.GetAllProductsBetweenPriceRange(l,r);
+            }
+            catch(Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }

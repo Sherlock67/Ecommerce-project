@@ -46,6 +46,17 @@ namespace pandacommerce_dal.Repository
             return db.products.Where(x => x.product_Id == Id).SingleOrDefault();
         }
 
+        public IEnumerable<Product>? getProductsbyPrice(int l, int r)
+        {
+            Product product = new Product();
+            if (product.price >= l && product.price <= r)
+            {
+                return GetAll();
+            }
+
+            return null;
+        }
+
         public void Update(Product entity)
         {
             db.products.Update(entity);
