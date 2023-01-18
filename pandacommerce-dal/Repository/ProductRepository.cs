@@ -40,7 +40,7 @@ namespace pandacommerce_dal.Repository
                 throw ex;
             }
         }
-
+        
         public Product GetById(int Id)
         {
             return db.products.Where(x => x.product_Id == Id).SingleOrDefault();
@@ -51,9 +51,8 @@ namespace pandacommerce_dal.Repository
             Product product = new Product();
             if (product.price >= l && product.price <= r)
             {
-                return GetAll();
+                return db.products.Where(x => x.price >=l && x.price <= r);
             }
-
             return null;
         }
 
