@@ -32,8 +32,36 @@ namespace pandacommerceapi.Controllers
         public List<NavCategory> GetAllNavigationCategory()
         {
             var data = navCategoryService.GetAllNavCategory();
-            return data.ToList(); 
+            return data.ToList();
         }
+        [HttpDelete("DeleteNavCategory")]
+        public bool DeleteNavCategory(int id)
+        {
+            try
+            {
+                navCategoryService.DeleteNavigationCategory(id);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        [HttpPut("UpdateNavCategory")]
+        public bool UpdateNavCategory(NavCategory navCategory)
+        {
+            try
+            {
+                navCategoryService.UpdateNavigationCategory(navCategory);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+
 
     }
 }
