@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
 using pandacommerce_bal.Services;
 using pandacommerce_dal.Model;
+using System.Text.Json;
 
 namespace pandacommerceapi.Controllers
 {
@@ -10,15 +13,18 @@ namespace pandacommerceapi.Controllers
     public class NavApiController : ControllerBase
     {
         private readonly NavCategoryService navCategoryService;
-        public NavApiController(NavCategoryService navCategoryService)
+        private readonly ILogger<NavApiController> _logger;
+        public NavApiController(NavCategoryService navCategoryService, ILogger<NavApiController> logger)
         {
             this.navCategoryService = navCategoryService;
+            _logger = logger;
         }
         [HttpPost("CreateNavigationCategory")]
         public async Task<Object> CreateNavigationCategory([FromBody] NavCategory navCategory)
         {
             try
             {
+                _logger.LogInformation("Executing {Action} with parameters: {Parameters}", nameof(navCategory), JsonSerializer.Serialize(navCategory));
                 await navCategoryService.AddNewCategory(navCategory);
                 return navCategory;
 

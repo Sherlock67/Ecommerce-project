@@ -12,6 +12,10 @@ namespace pandacommerce_dal.Model
         [Key]
         public int product_Id { get; set; }
         public string? product_name { get; set; }
+
+        public string short_description { get; set; }
+
+        public string full_description { get; set; }
         public int price { get; set; }
         public int categoryid { get; set; }
        // public ProductCategory productcategories { get; set; }
