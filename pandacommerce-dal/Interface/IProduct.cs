@@ -10,5 +10,7 @@ namespace pandacommerce_dal.Interface
     public interface IProduct : IRepository<Product>
     {
         public IEnumerable<Product> getProductsbyPrice(int l,int r);
+
+        public IEnumerable<Product> Search(string p_name);
     }
 }

@@ -32,5 +32,16 @@ namespace pandacommerce_bal.Services
 
             }
         }
+        public  IEnumerable<Product> GetByName(string p_name)
+        {
+            try
+            {
+                return product.Search(p_name);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

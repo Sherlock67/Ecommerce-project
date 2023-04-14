@@ -21,7 +21,7 @@ namespace pandaFrontend.Controllers
                 if(response != null)
                 {
                     var navigationlist = response.Content.ReadAsStringAsync().Result;
-                    listofnavmenu = JsonConvert.DeserializeObject<List<NavCategory>>(navigationlist);
+                    listNav = JsonConvert.DeserializeObject<List<NavCategory>>(navigationlist);
                 }
             }
         return View(listNav); 

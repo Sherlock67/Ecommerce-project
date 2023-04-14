@@ -1,4 +1,5 @@
-﻿using pandacommerce_dal.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using pandacommerce_dal.Data;
 using pandacommerce_dal.Interface;
 using pandacommerce_dal.Model;
 using System;
@@ -56,11 +57,23 @@ namespace pandacommerce_dal.Repository
             return null;
         }
 
+        public IEnumerable<Product> Search(string p_name)
+        {
+            IQueryable<Product> query = db.products;
+            if (!string.IsNullOrEmpty(p_name))
+            {
+                query = query.Where(e=>e.product_name.Contains(p_name));
+            }
+            return  query.ToList();
+        }
+
         public void Update(Product entity)
         {
             db.products.Update(entity);
             db.SaveChanges();
             
         }
+
+       
     }
 }
