@@ -50,9 +50,19 @@ namespace pandacommerce_dal.Repository
 
             return true;
         }
-        public Task<Customer> RegisterUser(Customer customer, string password)
+        public async Task<Customer> RegisterUser(Customer customer, string password)
         {
-            throw new NotImplementedException();
+            byte[] passwordHash, passwordSalt;
+
+            CreatePasswordHash(password, out passwordHash, out passwordSalt);
+
+            customer.PasswordSalt = passwordSalt;
+            customer.PasswordHash = passwordHash;
+
+            await db.AddAsync(customer);
+            await db.SaveChangesAsync();
+
+            return customer;
         }
 
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)

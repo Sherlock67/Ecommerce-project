@@ -10,18 +10,20 @@ namespace pandacommerce_bal.Services
 {
     public class CustomerService
     {
+        public readonly IAuthRepository auth;
         public readonly ICustomer customer;
-        public CustomerService(ICustomer customer)
+        public CustomerService(IAuthRepository auth, ICustomer customer)
         {
+            this.auth = auth;
             this.customer = customer;
         }
 
-        public async Task<Customer> AddNewCategory(Customer nav)
+        public async Task<Customer> RegisterCustomer(Customer nav)
         {
             return await customer.Create(nav);
         }
 
-        public IEnumerable<Customer> GetAllNavCategory()
+        public IEnumerable<Customer> GetAllCustomer()
         {
             try
             {
@@ -33,23 +35,23 @@ namespace pandacommerce_bal.Services
             }
         }
 
-        public async Task DeleteNavigationCategory(int id)
-        {
+        //public async Task DeleteNavigationCategory(int id)
+        //{
 
-            try
-            {
-                var cat = customer.GetById(id);
-                customer.Delete(cat);
+        //    try
+        //    {
+        //        var cat = customer.GetById(id);
+        //        customer.Delete(cat);
 
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
 
-        }
+        //}
 
-        public async Task UpdateNavigationCategory(Customer obj)
+        public async Task UpdateCustomerInformation(Customer obj)
         {
             try
             {
