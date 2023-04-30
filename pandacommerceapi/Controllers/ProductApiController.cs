@@ -10,7 +10,7 @@ namespace pandacommerceapi.Controllers
     public class ProductApiController : ControllerBase
     {
         private readonly ProductService pService;
-        private IEnumerable<Product> result;
+        private IEnumerable<Product>? result;
 
         public ProductApiController(ProductService pService)
         {
@@ -49,11 +49,7 @@ namespace pandacommerceapi.Controllers
             try
             {
                  result =  pService.GetByName(p_name);
-                //if (result.Any())
-                //{
-                //    return result;
-                //}
-                //return NotFound();
+                
             }
             catch (Exception ex)
             {
