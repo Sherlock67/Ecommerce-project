@@ -46,6 +46,11 @@ namespace pandacommerce_dal.Repository
             return db.Customers.Where(x => x.CustomerId == Id).SingleOrDefault();
         }
 
+        public Order MakeOrder(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Customer entity)
         {
             db.Customers.Update(entity);

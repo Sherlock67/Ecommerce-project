@@ -9,5 +9,7 @@ namespace pandacommerce_dal.Interface
 {
     public interface ICustomer : IRepository<Customer>
     {
+        public Order MakeOrder(Order order);
+        
     }
 }

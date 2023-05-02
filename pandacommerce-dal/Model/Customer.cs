@@ -26,5 +26,7 @@ namespace pandacommerce_dal.Model
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
 
+        public Order Order { get; set; }
+
     }
 }
