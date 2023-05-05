@@ -3,6 +3,7 @@ using pandacommerce_dal.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,9 +19,17 @@ namespace pandacommerce_bal.Services
             this.customer = customer;
         }
 
-        public async Task<Customer> RegisterCustomer(Customer nav)
+        public async Task<Customer> RegisterCustomer(Customer customer,string password)
         {
-            return await customer.Create(nav);
+           var username = customer.UserName;
+            username = username.ToLower();
+
+            var userToCreate = new Customer
+            {
+                UserName = username,
+            };
+            var createdUser = await auth.RegisterUser(customer,password);
+            return createdUser;
         }
 
         public IEnumerable<Customer> GetAllCustomer()
