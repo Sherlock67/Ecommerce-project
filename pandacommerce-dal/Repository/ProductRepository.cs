@@ -19,7 +19,7 @@ namespace pandacommerce_dal.Repository
         }
         public async Task<Product> Create(Product entity)
         {
-            var obj = await db.products.AddAsync(entity);
+            var obj = await db.Products.AddAsync(entity);
             db.SaveChanges();
             return obj.Entity;
         }
@@ -34,17 +34,18 @@ namespace pandacommerce_dal.Repository
         {
             try
             {
-                return db.products.ToList();
+                return db.Products.ToList();
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-        
+
         public Product GetById(int Id)
         {
-            return db.products.Where(x => x.ProductId == Id).SingleOrDefault();
+           
+             return db.Products.Where(x => x.ProductId == Id).SingleOrDefault();
         }
 
         public IEnumerable<Product>? getProductsbyPrice(int l, int r)
@@ -52,14 +53,14 @@ namespace pandacommerce_dal.Repository
             Product product = new Product();
             if (product.Price >= l && product.Price <= r)
             {
-                return db.products.Where(x => x.Price >=l && x.Price <= r);
+                return db.Products.Where(x => x.Price >=l && x.Price <= r);
             }
             return null;
         }
 
         public IEnumerable<Product> Search(string p_name)
         {
-            IQueryable<Product> query = db.products;
+            IQueryable<Product> query = db.Products;
             if (!string.IsNullOrEmpty(p_name))
             {
                 query = query.Where(e=>e.ProductName.Contains(p_name));
@@ -69,7 +70,7 @@ namespace pandacommerce_dal.Repository
 
         public void Update(Product entity)
         {
-            db.products.Update(entity);
+            db.Products.Update(entity);
             db.SaveChanges();
             
         }

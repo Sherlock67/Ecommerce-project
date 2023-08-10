@@ -28,5 +28,13 @@ namespace pandacommerceapi.Controllers
                 return false;
             }
         }
+
+        [HttpGet("GetAllProductCategory")]
+        public List<ProductCategory> GetAllProductCategory()
+        {
+            var data = productCategoryService.GetAllProductCategory();
+            return data.ToList();
+        }
+
     }
 }

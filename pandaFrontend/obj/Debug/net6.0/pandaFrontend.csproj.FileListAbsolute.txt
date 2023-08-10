@@ -1,3 +1,11 @@
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.AssemblyInfo.cs
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.RazorAssemblyInfo.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.RazorAssemblyInfo.cs
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\bin\Debug\net6.0\appsettings.json
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\bin\Debug\net6.0\pandaFrontend.staticwebassets.runtime.json
@@ -264,14 +272,6 @@ C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\bin\Debug\net6.0\runti
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\bin\Debug\net6.0\pandacommerce-dal.dll
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\bin\Debug\net6.0\pandacommerce-dal.pdb
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.csproj.AssemblyReference.cache
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.AssemblyInfoInputs.cache
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.AssemblyInfo.cs
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.csproj.CoreCompileInputs.cache
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.RazorAssemblyInfo.cache
-C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\pandaFrontend.RazorAssemblyInfo.cs
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\USER\source\repos\pandacommerceapi\pandaFrontend\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

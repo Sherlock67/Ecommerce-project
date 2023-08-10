@@ -1,12 +1,12 @@
-C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.deps.json
-C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.runtimeconfig.json
-C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.dll
-C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.pdb
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\pandacommerce-dal.csproj.AssemblyReference.cache
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\pandacommerce-dal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\pandacommerce-dal.AssemblyInfoInputs.cache
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\pandacommerce-dal.AssemblyInfo.cs
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\pandacommerce-dal.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.deps.json
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.runtimeconfig.json
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.dll
+C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\bin\Debug\net6.0\pandacommerce-dal.pdb
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\pandacommerce-dal.dll
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\refint\pandacommerce-dal.dll
 C:\Users\USER\source\repos\pandacommerceapi\pandacommerce-dal\obj\Debug\net6.0\pandacommerce-dal.pdb

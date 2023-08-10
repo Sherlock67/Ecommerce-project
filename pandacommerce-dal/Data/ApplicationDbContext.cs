@@ -19,7 +19,7 @@ namespace pandacommerce_dal.Data
 
         public DbSet<NavCategory> navCategories { get; set; }
 
-        public DbSet<Product> products { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         public DbSet<ProductCategory> productCategories { get; set; }
 

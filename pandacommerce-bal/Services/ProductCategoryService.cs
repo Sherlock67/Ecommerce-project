@@ -19,8 +19,20 @@ namespace pandacommerce_bal.Services
         {
             return await productCategory.Create(pCategory);
         }
-        
-        
+        public IEnumerable<ProductCategory> GetAllProductCategory()
+        {
+            try
+            {
+                return productCategory.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+
 
     }
 }
