@@ -44,15 +44,15 @@ namespace pandacommerce_dal.Repository
         
         public Product GetById(int Id)
         {
-            return db.products.Where(x => x.product_Id == Id).SingleOrDefault();
+            return db.products.Where(x => x.ProductId == Id).SingleOrDefault();
         }
 
         public IEnumerable<Product>? getProductsbyPrice(int l, int r)
         {
             Product product = new Product();
-            if (product.price >= l && product.price <= r)
+            if (product.Price >= l && product.Price <= r)
             {
-                return db.products.Where(x => x.price >=l && x.price <= r);
+                return db.products.Where(x => x.Price >=l && x.Price <= r);
             }
             return null;
         }
@@ -62,7 +62,7 @@ namespace pandacommerce_dal.Repository
             IQueryable<Product> query = db.products;
             if (!string.IsNullOrEmpty(p_name))
             {
-                query = query.Where(e=>e.product_name.Contains(p_name));
+                query = query.Where(e=>e.ProductName.Contains(p_name));
             }
             return  query.ToList();
         }

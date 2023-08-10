@@ -14,3 +14,4 @@ namespace pandacommerce_dal.Interface
         public IEnumerable<Product> Search(string p_name);
     }
 }
+ 

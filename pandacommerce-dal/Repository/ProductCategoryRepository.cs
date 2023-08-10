@@ -43,7 +43,7 @@ namespace pandacommerce_dal.Repository
 
         public ProductCategory GetById(int Id)
         {
-            return db.productCategories.Where(x => x.categoryid == Id).SingleOrDefault();
+            return db.productCategories.Where(x => x.CategoryID == Id).SingleOrDefault();
             //throw new NotImplementedException();
         }
 

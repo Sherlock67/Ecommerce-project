@@ -10,9 +10,9 @@ namespace pandacommerce_dal.Model
     public class ProductCategory
     {
         [Key]
-        public int categoryid { get; set; }
+        public int CategoryID { get; set; }
 
-        public string categoryname { get; set; }
+        public string CategoryName { get; set; }
 
         //public Product product { get; set; } 
         //public ICollection<Product> products { get; set; }
