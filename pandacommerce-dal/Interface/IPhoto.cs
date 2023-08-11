@@ -5,7 +5,7 @@ namespace pandacommerce_dal.Interface
     {
         void Add<T> (T entity) where T : class;
         void Delete<T>(T entity) where T : class;
-        Task<IEnumerable<Product>> GetProducts();
+        Task<IEnumerable<Product>> GetProducts(int id);
         Task<Photo> GetPhoto(int id);
     }
 }

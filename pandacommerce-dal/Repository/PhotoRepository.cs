@@ -1,4 +1,5 @@
-﻿using pandacommerce_dal.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using pandacommerce_dal.Data;
 using pandacommerce_dal.Interface;
 using pandacommerce_dal.Model;
 using System;
@@ -24,17 +25,19 @@ namespace pandacommerce_dal.Repository
 
         public void Delete<T>(T entity) where T : class
         {
-            throw new NotImplementedException();
+            db.Remove(entity);
+            //throw new NotImplementedException();
         }
 
-        public Task<Photo> GetPhoto(int id)
+        public async Task<Photo> GetPhoto(int id)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return await db.Photos.FirstAsync(p => p.Id == id);
         }
 
-        public Task<IEnumerable<Product>> GetProducts()
+        public async Task<IEnumerable<Product>> GetProducts(int id)
         {
-            throw new NotImplementedException();
+            return await db.Products.Include(p => p.Photos).ToListAsync();
         }
     }
 }
