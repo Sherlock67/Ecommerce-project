@@ -39,7 +39,7 @@ namespace pandacommerceapi.Controllers
             }
             catch(Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
         [HttpGet("ProductNameSearchByName")]

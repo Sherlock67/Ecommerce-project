@@ -16,5 +16,6 @@ namespace pandacommerce_dal.Model
         public string FullDescription { get; set; }
         public string BrandName { get; set; }
         public int Price { get; set; }
+        public ICollection<Photo> Photos { get; set; }
     }
 }
