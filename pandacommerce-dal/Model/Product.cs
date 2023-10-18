@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace pandacommerce_dal.Model
 {
@@ -16,6 +11,7 @@ namespace pandacommerce_dal.Model
         public string FullDescription { get; set; }
         public string BrandName { get; set; }
         public int Price { get; set; }
-        public ICollection<Photo> Photos { get; set; }
+        public int CategoryId { get; set; }
+        public ICollection<ProductCategory> Categories { get; set; }
     }
 }

@@ -112,31 +112,6 @@ namespace pandacommercedal.Migrations
                     b.ToTable("Order");
                 });
 
-            modelBuilder.Entity("pandacommerce_dal.Model.Photo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DateAdded")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Photos");
-                });
-
             modelBuilder.Entity("pandacommerce_dal.Model.Product", b =>
                 {
                     b.Property<int>("ProductId")
@@ -148,6 +123,9 @@ namespace pandacommercedal.Migrations
                     b.Property<string>("BrandName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<string>("FullDescription")
                         .IsRequired()
@@ -181,7 +159,12 @@ namespace pandacommercedal.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
                     b.HasKey("CategoryID");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("productCategories");
                 });
@@ -197,15 +180,11 @@ namespace pandacommercedal.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("pandacommerce_dal.Model.Photo", b =>
+            modelBuilder.Entity("pandacommerce_dal.Model.ProductCategory", b =>
                 {
-                    b.HasOne("pandacommerce_dal.Model.Product", "Product")
-                        .WithMany("Photos")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
+                    b.HasOne("pandacommerce_dal.Model.Product", null)
+                        .WithMany("Categories")
+                        .HasForeignKey("ProductId");
                 });
 
             modelBuilder.Entity("pandacommerce_dal.Model.Order", b =>
@@ -215,7 +194,7 @@ namespace pandacommercedal.Migrations
 
             modelBuilder.Entity("pandacommerce_dal.Model.Product", b =>
                 {
-                    b.Navigation("Photos");
+                    b.Navigation("Categories");
                 });
 #pragma warning restore 612, 618
         }

@@ -14,7 +14,6 @@ namespace pandacommerce_dal.Model
 
         public string CategoryName { get; set; }
 
-        //public Product product { get; set; } 
-        //public ICollection<Product> products { get; set; }
+        
     }
 }
