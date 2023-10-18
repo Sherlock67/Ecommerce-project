@@ -16,14 +16,13 @@ namespace pandacommerce_dal.Data
 
 
         }
-
         public DbSet<NavCategory> navCategories { get; set; }
-
         public DbSet<Product> Products { get; set; }
-
         public DbSet<ProductCategory> productCategories { get; set; }
-
         //public DbSet<Photo> Photos { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Module> Modules { get; set; }
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<MenuPermission> MenuPermissions { get; set; }
     }
 }

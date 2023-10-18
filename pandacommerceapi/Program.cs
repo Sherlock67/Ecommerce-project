@@ -3,10 +3,11 @@ using pandacommerce_bal.Services;
 using pandacommerce_dal.Data;
 using pandacommerce_dal.Interface;
 using pandacommerce_dal.Repository;
+using pandacommerceapi.Filter;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers(options => options.Filters.Add(new HttpResponseExceptionFilter()));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

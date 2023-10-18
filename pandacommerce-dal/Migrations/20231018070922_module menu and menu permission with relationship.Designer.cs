@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using pandacommerce_dal.Data;
 
@@ -11,9 +12,11 @@ using pandacommerce_dal.Data;
 namespace pandacommercedal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231018070922_module menu and menu permission with relationship")]
+    partial class modulemenuandmenupermissionwithrelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,121 +73,6 @@ namespace pandacommercedal.Migrations
                     b.HasIndex("OrderId");
 
                     b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("pandacommerce_dal.Model.Menu", b =>
-                {
-                    b.Property<int>("MenuId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MenuId"));
-
-                    b.Property<bool?>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsSubParent")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("MenuIcon")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MenuName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MenuPath")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("MenuSequence")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ModuleId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ParentId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("SubParentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("MenuId");
-
-                    b.HasIndex("ModuleId");
-
-                    b.ToTable("Menus");
-                });
-
-            modelBuilder.Entity("pandacommerce_dal.Model.MenuPermission", b =>
-                {
-                    b.Property<int>("PermissionId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PermissionId"));
-
-                    b.Property<bool?>("CanCreate")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("CanDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("CanEdit")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("CanView")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("MenuId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("RoleId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("PermissionId");
-
-                    b.HasIndex("MenuId");
-
-                    b.ToTable("MenuPermissions");
-                });
-
-            modelBuilder.Entity("pandacommerce_dal.Model.Module", b =>
-                {
-                    b.Property<int>("ModuleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ModuleId"));
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool?>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ModuleColor")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ModuleIcon")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ModuleName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ModulePath")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("ModuleSequence")
-                        .HasColumnType("int");
-
-                    b.HasKey("ModuleId");
-
-                    b.ToTable("Modules");
                 });
 
             modelBuilder.Entity("pandacommerce_dal.Model.NavCategory", b =>
@@ -295,39 +183,11 @@ namespace pandacommercedal.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("pandacommerce_dal.Model.Menu", b =>
-                {
-                    b.HasOne("pandacommerce_dal.Model.Module", "Module")
-                        .WithMany("Menus")
-                        .HasForeignKey("ModuleId");
-
-                    b.Navigation("Module");
-                });
-
-            modelBuilder.Entity("pandacommerce_dal.Model.MenuPermission", b =>
-                {
-                    b.HasOne("pandacommerce_dal.Model.Menu", "Menu")
-                        .WithMany("MenuPermissions")
-                        .HasForeignKey("MenuId");
-
-                    b.Navigation("Menu");
-                });
-
             modelBuilder.Entity("pandacommerce_dal.Model.ProductCategory", b =>
                 {
                     b.HasOne("pandacommerce_dal.Model.Product", null)
                         .WithMany("Categories")
                         .HasForeignKey("ProductId");
-                });
-
-            modelBuilder.Entity("pandacommerce_dal.Model.Menu", b =>
-                {
-                    b.Navigation("MenuPermissions");
-                });
-
-            modelBuilder.Entity("pandacommerce_dal.Model.Module", b =>
-                {
-                    b.Navigation("Menus");
                 });
 
             modelBuilder.Entity("pandacommerce_dal.Model.Order", b =>

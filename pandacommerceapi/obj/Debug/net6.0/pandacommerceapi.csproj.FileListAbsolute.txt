@@ -561,6 +561,7 @@ D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommercea
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommerceapi.AssemblyInfoInputs.cache
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommerceapi.AssemblyInfo.cs
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommerceapi.csproj.CoreCompileInputs.cache
+D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommerceapi.MvcApplicationPartsAssemblyInfo.cs
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommerceapi.MvcApplicationPartsAssemblyInfo.cache
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\staticwebassets\msbuild.pandacommerceapi.Microsoft.AspNetCore.StaticWebAssets.props
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\staticwebassets\msbuild.build.pandacommerceapi.props
