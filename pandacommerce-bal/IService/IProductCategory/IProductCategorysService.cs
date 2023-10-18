@@ -2,7 +2,7 @@
 
 namespace pandacommerce_bal.IService.IProductCategory
 {
-    internal interface IProductCategorysService
+    public interface IProductCategorysService
     {
         public Task<ProductCategory> AddNewProductCategory(ProductCategory productCategory);
         public IEnumerable<ProductCategory> GetAllProductCategory();

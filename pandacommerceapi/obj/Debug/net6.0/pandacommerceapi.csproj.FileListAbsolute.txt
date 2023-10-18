@@ -577,3 +577,4 @@ D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\refint\pandaco
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommerceapi.pdb
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\pandacommerceapi.genruntimeconfig.cache
 D:\New folder\ecommerce-project\pandacommerceapi\obj\Debug\net6.0\ref\pandacommerceapi.dll
+D:\New folder\ecommerce-project\pandacommerceapi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

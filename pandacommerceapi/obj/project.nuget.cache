@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rR1b0LffZktQgVpwWx5Q+QNRfhyJ95mgqdMHYXouNiQtU202Ka4gE5m6IvItfVsNI6PIm4FLyrooD3CS6YgnzA==",
+  "dgSpecHash": "QlsirfJoOt2WPiOhXiHsMor4nmsAEw7crprjoBbJkcPbglKREdjUKgaWtoPZ4ZKuJdbP9/+0helDoTWgWUzB8A==",
   "success": true,
   "projectFilePath": "D:\\New folder\\ecommerce-project\\pandacommerceapi\\pandacommerceapi.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Whistle 4\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Whistle 4\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Whistle 4\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\Whistle 4\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.23\\microsoft.aspnetcore.authentication.jwtbearer.6.0.23.nupkg.sha512",
     "C:\\Users\\Whistle 4\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\Whistle 4\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Whistle 4\\.nuget\\packages\\microsoft.build\\17.0.0\\microsoft.build.17.0.0.nupkg.sha512",

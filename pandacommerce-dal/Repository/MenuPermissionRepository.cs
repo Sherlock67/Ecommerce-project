@@ -1,10 +1,5 @@
 ﻿using pandacommerce_dal.Interface;
 using pandacommerce_dal.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pandacommerce_dal.Repository
 {

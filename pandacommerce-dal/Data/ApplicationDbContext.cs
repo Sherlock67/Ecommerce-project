@@ -24,5 +24,6 @@ namespace pandacommerce_dal.Data
         public DbSet<Module> Modules { get; set; }
         public DbSet<Menu> Menus { get; set; }
         public DbSet<MenuPermission> MenuPermissions { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
     }
 }
