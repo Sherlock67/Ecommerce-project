@@ -1,15 +1,11 @@
-﻿using pandacommerce_dal.Interface;
+﻿using pandacommerce_bal.IService.INavigations;
+using pandacommerce_dal.Interface;
 using pandacommerce_dal.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pandacommerce_bal.Services
 {
 
-    public class NavCategoryService
+    public class NavCategoryService : INavService
     {
         public readonly INavCategory navCategory;
         public NavCategoryService(INavCategory navCategory)
@@ -21,7 +17,7 @@ namespace pandacommerce_bal.Services
             return await navCategory.Create(nav);
         }
 
-        public IEnumerable<NavCategory> GetAllNavCategory()
+        public IEnumerable<NavCategory> GetAllNavigationCategory()
         {
             try
             {

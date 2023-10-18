@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-
+﻿using Microsoft.AspNetCore.Mvc;
 using pandacommerce_bal.Services;
 using pandacommerce_dal.Model;
 using System.Text.Json;
@@ -37,7 +34,7 @@ namespace pandacommerceapi.Controllers
         [HttpGet("GetAllNavigationCategory")]
         public List<NavCategory> GetAllNavigationCategory()
         {
-            var data = navCategoryService.GetAllNavCategory();
+            var data = navCategoryService.GetAllNavigationCategory();
             return data.ToList();
         }
         [HttpDelete("DeleteNavCategory")]

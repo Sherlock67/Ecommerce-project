@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using pandacommerce_bal.IService.INavigations;
+using pandacommerce_bal.IService.IProducts;
 using pandacommerce_bal.Services;
 using pandacommerce_dal.Data;
 using pandacommerce_dal.Interface;
@@ -15,8 +17,8 @@ builder.Services.AddTransient<IProduct,ProductRepository>();
 builder.Services.AddTransient<IProductCategory,ProductCategoryRepository>();
 builder.Services.AddTransient<ProductCategoryService>();
 builder.Services.AddTransient<INavCategory, NavCategoryRepository>();
-builder.Services.AddTransient<NavCategoryService>();
-builder.Services.AddTransient<ProductService>();
+builder.Services.AddTransient<INavService,NavCategoryService>();
+builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));

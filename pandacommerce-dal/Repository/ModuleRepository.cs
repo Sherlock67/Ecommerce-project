@@ -28,7 +28,14 @@ namespace pandacommerce_dal.Repository
 
         public IEnumerable<Module> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return db.Modules.ToList();
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }
         }
 
         public Module GetById(int Id)

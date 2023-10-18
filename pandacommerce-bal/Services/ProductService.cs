@@ -1,14 +1,10 @@
-﻿using pandacommerce_dal.Interface;
+﻿using pandacommerce_bal.IService.IProducts;
+using pandacommerce_dal.Interface;
 using pandacommerce_dal.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pandacommerce_bal.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         public readonly IProduct product;
         public ProductService(IProduct product)
@@ -18,6 +14,11 @@ namespace pandacommerce_bal.Services
         public async Task<Product> AddNewProduct(Product p)
         {
             return await product.Create(p);
+        }
+
+        public IEnumerable<Product> GetAllProducts()
+        {
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Product> GetAllProductsBetweenPriceRange(int l,int r)

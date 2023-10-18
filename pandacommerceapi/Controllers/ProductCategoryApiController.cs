@@ -19,7 +19,7 @@ namespace pandacommerceapi.Controllers
         {
             try
             {
-                await productCategoryService.NewProductCategory(pCategory);
+                await productCategoryService.AddNewProductCategory(pCategory);
                 return pCategory;
 
             }
