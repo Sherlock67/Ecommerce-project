@@ -28,3 +28,18 @@ D:\New folder\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce
 D:\New folder\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\refint\pandacommerce-bal.dll
 D:\New folder\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.pdb
 D:\New folder\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\ref\pandacommerce-bal.dll
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-bal.deps.json
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-bal.dll
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-bal.pdb
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-dal.dll
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\bin\Debug\net6.0\pandacommerce-dal.pdb
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.csproj.AssemblyReference.cache
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.GeneratedMSBuildEditorConfig.editorconfig
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.AssemblyInfoInputs.cache
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.AssemblyInfo.cs
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.csproj.CoreCompileInputs.cache
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.csproj.CopyComplete
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.dll
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\refint\pandacommerce-bal.dll
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\pandacommerce-bal.pdb
+D:\ecomeerce-backend\ecommerce-project\pandacommerce-bal\obj\Debug\net6.0\ref\pandacommerce-bal.dll

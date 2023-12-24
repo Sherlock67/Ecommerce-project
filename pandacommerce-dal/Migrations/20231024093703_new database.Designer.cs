@@ -12,8 +12,8 @@ using pandacommerce_dal.Data;
 namespace pandacommercedal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231018104300_Application user table modification")]
-    partial class Applicationusertablemodification
+    [Migration("20231024093703_new database")]
+    partial class newdatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

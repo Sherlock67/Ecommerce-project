@@ -27,7 +27,7 @@ builder.Services.AddTransient<IProductCategorysService,ProductCategoryService>()
 builder.Services.AddTransient<INavCategory, NavCategoryRepository>();
 builder.Services.AddTransient<INavService,NavCategoryService>();
 builder.Services.AddTransient<IProductService, ProductService>();
-
+builder.Services.AddTransient<IModule, ModuleRepository>();
 builder.Services.AddTransient<ILoginRepository, LoginRepository>();
 builder.Services.AddTransient<ILoginService, LoginService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(

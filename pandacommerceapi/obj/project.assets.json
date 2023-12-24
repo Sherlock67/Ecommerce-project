@@ -10722,23 +10722,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Whistle 4\\.nuget\\packages\\": {},
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\New folder\\ecommerce-project\\pandacommerceapi\\pandacommerceapi.csproj",
+      "projectUniqueName": "D:\\ecomeerce-backend\\ecommerce-project\\pandacommerceapi\\pandacommerceapi.csproj",
       "projectName": "pandacommerceapi",
-      "projectPath": "D:\\New folder\\ecommerce-project\\pandacommerceapi\\pandacommerceapi.csproj",
-      "packagesPath": "C:\\Users\\Whistle 4\\.nuget\\packages\\",
-      "outputPath": "D:\\New folder\\ecommerce-project\\pandacommerceapi\\obj\\",
+      "projectPath": "D:\\ecomeerce-backend\\ecommerce-project\\pandacommerceapi\\pandacommerceapi.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "D:\\ecomeerce-backend\\ecommerce-project\\pandacommerceapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Whistle 4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10754,11 +10754,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\New folder\\ecommerce-project\\pandacommerce-bal\\pandacommerce-bal.csproj": {
-              "projectPath": "D:\\New folder\\ecommerce-project\\pandacommerce-bal\\pandacommerce-bal.csproj"
+            "D:\\ecomeerce-backend\\ecommerce-project\\pandacommerce-bal\\pandacommerce-bal.csproj": {
+              "projectPath": "D:\\ecomeerce-backend\\ecommerce-project\\pandacommerce-bal\\pandacommerce-bal.csproj"
             },
-            "D:\\New folder\\ecommerce-project\\pandacommerce-dal\\pandacommerce-dal.csproj": {
-              "projectPath": "D:\\New folder\\ecommerce-project\\pandacommerce-dal\\pandacommerce-dal.csproj"
+            "D:\\ecomeerce-backend\\ecommerce-project\\pandacommerce-dal\\pandacommerce-dal.csproj": {
+              "projectPath": "D:\\ecomeerce-backend\\ecommerce-project\\pandacommerce-dal\\pandacommerce-dal.csproj"
             }
           }
         }
@@ -10815,7 +10815,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

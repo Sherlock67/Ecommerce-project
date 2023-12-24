@@ -91,7 +91,7 @@ namespace pandacommerce_dal.Repository
             Claim[] claims = new[]
              {
                 new Claim("AdminOnly", "Admin"),
-               
+
 
             };
 
